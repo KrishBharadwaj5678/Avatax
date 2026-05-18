@@ -1,13 +1,12 @@
 # 🤳**Avatax** 
 
-Avatax is a **live facial motion tracking system** that transforms your **webcam input into real-time 3D avatar animation**.
+Avatax is a **live facial tracking system** that transforms your **webcam input into real-time 3D avatar animation**.
 
 ## ✨ **Features** 
 
 | **Feature**                      | **Description**                                            |
 | -------------------------------- | ---------------------------------------------------------- |
 | ⚡ **Real-Time Face Tracking**    | Uses **MediaPipe FaceMesh** to track facial landmarks.    |
-| 🤖 **Blendshape Animation**      | Maps expressions to avatar blendshapes via MediaPipe.      |
 | 🎥 **Webcam Motion Capture**     | Works using only your webcam—no extra hardware needed.     |
 | 🧩 **Customizable Avatars**      | Choose from the available built-in avatars.                |
 | 🎨 **Color Control Panel**       | Easily adjust lighting and environment colors.             |
@@ -30,46 +29,30 @@ Avatax is a **live facial motion tracking system** that transforms your **webcam
 
 ---
 
-
 ## 🛠️ **Installation** 
 
-Follow these steps to run **Avatax** locally:
+### 1️⃣ Clone the repository
 
-1. Clone the Repository:
+```bash
+  git clone https://github.com/KrishBharadwaj5678/Avatax.git
+```
 
-    ```bash
-    git clone https://github.com/KrishBharadwaj5678/Avatax.git
-    ```
+### 2️⃣ Navigate to project folder
 
-2. Enter the Project Folder
+```bash
+  cd Avatax
+```
 
-    ```bash
-    cd Avatax
-    ```
+### 3️⃣ Install dependencies
 
-3. Install Dependencies
+```bash
+  npm install
+```
 
-    ```bash
-    npm install
-    ```
+### 4️⃣ Start the Development Server
 
-4. Start the Development Server
+```bash
+  npm run dev
+```
 
-    ```bash
-    npm run dev
-    ```
-
-5. Open the app in your browser.
-
----
-
-## 🤝 Contributing 
-
-Want to contribute? Here's how:
-
-1. 🍴 Fork the repository.
-2. 🌿 Create a new branch (`git checkout -b feature-name`).
-3. ✍️ Make your changes and commit them (`git commit -am 'Add feature-name'`).
-4. 🚀 Push to your branch (`git push origin feature-name`).
-5. 🔄 Submit a pull request to merge into the main branch.
-
+### 5️⃣ Open the app in your browser
