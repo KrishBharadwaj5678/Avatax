@@ -16,9 +16,7 @@ function Home() {
   let { rotation, setRotation, blendShapes, setBlendShapes } = useAvatar();
   let { color, colorPickerPopUp, setColorPickerPopUp } = useColor();
 
-  let [url, setURL] = useState<string>(
-    "https://models.readyplayer.me/691ed30ebcfe438b185fd49e.glb"
-  );
+  let [url, setURL] = useState<string>("models/5193831.glb");
 
   let [open, setOpen] = useState(false);
   let [currentPos, setCurrentPos] = useState(avatars[0].posy);
@@ -30,7 +28,7 @@ function Home() {
 
   let setup = async () => {
     let vision = await FilesetResolver.forVisionTasks(
-      "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm"
+      "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm",
     );
 
     faceLandmarker = await FaceLandmarker.createFromOptions(vision, {
@@ -67,7 +65,7 @@ function Home() {
         result.faceBlendshapes[0].categories.length > 0
       ) {
         let matrix = new Matrix4().fromArray(
-          result.facialTransformationMatrixes![0].data
+          result.facialTransformationMatrixes![0].data,
         );
 
         rotation = new Euler().setFromRotationMatrix(matrix);

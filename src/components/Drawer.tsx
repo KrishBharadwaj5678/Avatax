@@ -53,14 +53,14 @@ const Drawer = ({
                   className={`
                     ${
                       selectedAvatar === avatar.id
-                        ? "border-[1.5px] border-blue-400 shadow-[0_0_8px_rgba(59,130,246,0.5)]"
+                        ? "border-[1.5px] border-blue-400 shadow-[0_0_5px_rgba(59,130,246,0.5)]"
                         : "border border-white/10"
                     } relative cursor-pointer rounded-xl overflow-hidden
                      border backdrop-blur-xl
                     transition-all duration-300
                     w-[110px] h-[105px]
                     sm:w-[130px] sm:h-[120px]
-                    mx-auto`}
+                    mx-auto bg-[#2d2d2d]`}
                   onClick={() => (
                     setURL(avatar.url),
                     setCurrentPos(avatar.posy),
