@@ -1,3 +1,5 @@
+[English](README.md) | [Português](README.pt.md) | [日本語](README.ja.md) | [Русский](README.ru.md)
+
 # ✨ **Avatax** 
 
 Avatax is a **live facial tracking system** that transforms your **webcam input into real-time 3D avatar animation**.
